@@ -1,53 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-05T12:19:07 IST" name="Default suite" finished-at="2024-08-05T12:22:49 IST" duration-ms="222708">
+  <suite started-at="2024-08-05T17:34:20 IST" name="Default suite" finished-at="2024-08-05T17:35:03 IST" duration-ms="43272">
     <groups>
     </groups>
-    <test started-at="2024-08-05T12:19:07 IST" name="Default test" finished-at="2024-08-05T12:22:49 IST" duration-ms="222708">
-      <class name="com.test.Tagit.Atlas_Rename_Editor">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:19:07 IST" name="setup" finished-at="2024-08-05T12:20:57 IST" duration-ms="110374" status="PASS">
+    <test started-at="2024-08-05T17:34:20 IST" name="Default test" finished-at="2024-08-05T17:35:03 IST" duration-ms="43272">
+      <class name="com.test.Tagit.NumberSearchOntology">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:20 IST" name="setup" finished-at="2024-08-05T17:34:21 IST" duration-ms="1055" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:20:57 IST" name="Login" finished-at="2024-08-05T12:21:12 IST" duration-ms="15390" status="PASS">
+        <test-method signature="Login()[pri:1, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:21 IST" name="Login" finished-at="2024-08-05T17:34:48 IST" duration-ms="27407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:21:12 IST" name="table" finished-at="2024-08-05T12:21:21 IST" duration-ms="8391" status="PASS">
+        <test-method signature="table()[pri:2, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:48 IST" name="table" finished-at="2024-08-05T17:34:56 IST" duration-ms="7666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- table -->
-        <test-method signature="Direct_Draw_page()[pri:3, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:21:21 IST" name="Direct_Draw_page" finished-at="2024-08-05T12:21:27 IST" duration-ms="5827" status="PASS">
+        <test-method signature="Direct_Draw_page()[pri:3, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:56 IST" name="Direct_Draw_page" finished-at="2024-08-05T17:35:00 IST" duration-ms="3665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Direct_Draw_page -->
-        <test-method signature="search()[pri:4, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:21:27 IST" name="search" finished-at="2024-08-05T12:21:33 IST" duration-ms="6463" status="PASS">
+        <test-method signature="search()[pri:4, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:35:00 IST" name="search" finished-at="2024-08-05T17:35:03 IST" duration-ms="3253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method signature="drawSquareInMiddle()[pri:5, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:21:33 IST" name="drawSquareInMiddle" finished-at="2024-08-05T12:21:42 IST" duration-ms="9256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- drawSquareInMiddle -->
-        <test-method signature="selectRegion()[pri:6, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:21:42 IST" name="selectRegion" finished-at="2024-08-05T12:22:26 IST" duration-ms="44077" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectRegion -->
-        <test-method signature="DeleteRegion()[pri:7, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:22:26 IST" name="DeleteRegion" finished-at="2024-08-05T12:22:44 IST" duration-ms="17664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DeleteRegion -->
-        <test-method signature="Save_Del_region()[pri:8, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:22:44 IST" name="Save_Del_region" finished-at="2024-08-05T12:22:49 IST" duration-ms="5050" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Save_Del_region -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.Atlas_Rename_Editor@53ce1329]" started-at="2024-08-05T12:22:49 IST" name="tearDown" finished-at="2024-08-05T12:22:49 IST" duration-ms="146" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:35:03 IST" name="tearDown" finished-at="2024-08-05T17:35:03 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.Tagit.Atlas_Rename_Editor -->
+      </class> <!-- com.test.Tagit.NumberSearchOntology -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

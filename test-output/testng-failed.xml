@@ -3,16 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Tagit.Brain">
+      <class name="com.test.Tagit.NumberSearchOntology">
         <methods>
-          <include name="viewer"/>
-          <include name="brain_tag_it"/>
-          <include name="afterTest"/>
-          <include name="login"/>
-          <include name="tagIT_Search"/>
+          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- com.test.Tagit.Brain -->
+      </class> <!-- com.test.Tagit.NumberSearchOntology -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
