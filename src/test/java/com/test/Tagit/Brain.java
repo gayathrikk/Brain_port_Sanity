@@ -53,7 +53,7 @@ public class Brain {
 			
 				DesiredCapabilities dc = DesiredCapabilities.chrome();
 			
-				URL url = new URL("http://172.12.20.99:4443/wd/hub");
+				URL url = new URL("http://172.20.23.92:4443/wd/hub");
 			
 				driver = new RemoteWebDriver(url, dc);
 			
@@ -200,7 +200,7 @@ public class Brain {
 			 }
 			
 			 Thread.sleep(3000);
-			 WebElement redirectIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-card-footer[@class='p-2'])[1]/nb-icon")));
+			 WebElement redirectIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@icon='viewer']")));
 			
 			 if (redirectIcon != null && redirectIcon.isDisplayed()) {
 			
@@ -375,7 +375,7 @@ public class Brain {
 			
 				
 			
-				WebElement enterButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@class='custom-icon search-submit']")));
+				WebElement enterButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@class='custom-icon search-submit ng-star-inserted']")));
 			
 				if (enterButton != null && enterButton.isDisplayed()) {
 			
@@ -398,7 +398,7 @@ public class Brain {
 			
 				public void viewer() throws InterruptedException {
 			
-				WebElement redirectIcon2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-card-footer[@class='p-2'])[1]/nb-icon")));
+				WebElement redirectIcon2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@icon='viewer']")));
 			
 			 if (redirectIcon2 != null && redirectIcon2.isDisplayed()) {
 			

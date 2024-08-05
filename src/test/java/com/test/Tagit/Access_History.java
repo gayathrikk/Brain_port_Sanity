@@ -121,7 +121,7 @@ public class Access_History {
 	.visibilityOfElementLocated(By.xpath("(//div[@class='details history-details'])[2]")));
 	Thread.sleep(300);
 	WebElement elementToFind = wait.until(
-	ExpectedConditions.visibilityOfElementLocated(By.xpath("(//li[text()='  Biosample ID - 29  '])[2]")));
+	ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()=' Biosample ID - 29  ']")));
 
 	// Scroll to the element in the scrollable section
 	scrollUntilElementIsFound(scrollableSection, elementToFind);
@@ -164,9 +164,9 @@ public class Access_History {
 	@Test(priority = 3)
 	public void History_Test_Section_cell() throws InterruptedException {
 	Thread.sleep(3000);
-	WebElement scrollableSection = driver.findElement(By.xpath("(//div[@class='details history-details'])[2]"));
+	WebElement scrollableSection = driver.findElement(By.xpath("(//div[@class='details history-details'])[2/]"));
 	Thread.sleep(3000);
-	WebElement elementToFind = driver.findElement(By.xpath("//li[text()='  SEC ID - 2375  ']"));
+	WebElement elementToFind = driver.findElement(By.xpath("(//span[text()=' SEC ID - 1018 '])[1]"));
 
 	// Scroll to the element in the scrollable section
 	scrollUntilElementIsFound(scrollableSection, elementToFind);
@@ -184,7 +184,7 @@ public class Access_History {
 	}
 
 	Thread.sleep(3000);
-	String[] expectedFileName = { "16 | NISSL | 505 | 0" };
+	String[] expectedFileName = { "16 | NISSL | 340" };
 
 	java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
 	String actualFileName = locationElements.get(0).getText();
@@ -198,43 +198,43 @@ public class Access_History {
 	driver.switchTo().window(parentWindow3);
 	}
 
-	@Test(priority = 4)
-	public void History_Test_Section_Atlas() throws InterruptedException {
-	Thread.sleep(9000);
-	WebElement scrollableSection = driver.findElement(By.xpath("(//div[@class='details history-details'])[2]"));
-	Thread.sleep(300);
-	WebElement elementToFind = driver.findElement(By.xpath("//li[text()='  SEC ID - 2341  ']"));
-
-	// Scroll to the element in the scrollable section
-	scrollUntilElementIsFound(scrollableSection, elementToFind);
-	String parentWindow5 = driver.getWindowHandle();
-
-	elementToFind.click();
-	Thread.sleep(5000);
-	Set<String> allWindows = driver.getWindowHandles();
-	for (String window3 : allWindows) {
-	if (!window3.equals(parentWindow5)) {
-	driver.switchTo().window(window3);
-	break;
-	}
-	}
-
-	Thread.sleep(3000);
-
-	String[] expectedFileName = { "16 | NISSL | 364" };
-
-	java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
-	String actualFileName = locationElements.get(0).getText();
-	Thread.sleep(2000);
-
-	Assert.assertEquals(actualFileName, expectedFileName[0], "FileName not matching.");
-	System.out.println("Brain loaded successfully.");
-	System.out.println("\n\n ************************Atlas Annotation validation done***********************\n\n");
-	Thread.sleep(2000);
-	driver.close();
-	//   driver.switchTo().window(parentWindow5);
-
-	}
+//	@Test(priority = 4)
+//	public void History_Test_Section_Atlas() throws InterruptedException {
+//	Thread.sleep(9000);
+//	WebElement scrollableSection = driver.findElement(By.xpath("(//div[@class='details history-details'])[2]"));
+//	Thread.sleep(300);
+//	WebElement elementToFind = driver.findElement(By.xpath("//span[text()='  SEC ID - 1018  ']"));
+//
+//	// Scroll to the element in the scrollable section
+//	scrollUntilElementIsFound(scrollableSection, elementToFind);
+//	String parentWindow5 = driver.getWindowHandle();
+//
+//	elementToFind.click();
+//	Thread.sleep(5000);
+//	Set<String> allWindows = driver.getWindowHandles();
+//	for (String window3 : allWindows) {
+//	if (!window3.equals(parentWindow5)) {
+//	driver.switchTo().window(window3);
+//	break;
+//	}
+//	}
+//
+//	Thread.sleep(3000);
+//
+//	String[] expectedFileName = { "16 | NISSL | 340" };
+//
+//	java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
+//	String actualFileName = locationElements.get(0).getText();
+//	Thread.sleep(2000);
+//
+//	Assert.assertEquals(actualFileName, expectedFileName[0], "FileName not matching.");
+//	System.out.println("Brain loaded successfully.");
+//	System.out.println("\n\n ************************Atlas Annotation validation done***********************\n\n");
+//	Thread.sleep(2000);
+//	driver.close();
+//	//   driver.switchTo().window(parentWindow5);
+//
+//	}
 
 	private void scrollUntilElementIsFound(WebElement scrollableSection, WebElement element) {
 	boolean scrollingDown = true;

@@ -5,7 +5,10 @@
     <classes>
       <class name="com.test.Tagit.Brain">
         <methods>
+          <include name="viewer"/>
+          <include name="brain_tag_it"/>
           <include name="afterTest"/>
+          <include name="login"/>
           <include name="tagIT_Search"/>
           <include name="setup"/>
         </methods>

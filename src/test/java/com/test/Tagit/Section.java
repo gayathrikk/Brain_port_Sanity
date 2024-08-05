@@ -1,6 +1,7 @@
 package com.test.Tagit;
 
 import java.net.URL;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -31,13 +32,13 @@ public class Section {
 			public void setup() throws Exception
 			{
 			DesiredCapabilities dc = DesiredCapabilities.chrome();
-			       URL url = new URL("http://172.12.20.99:4444/wd/hub");
+			       URL url = new URL("http://172.12.20.99:4443/wd/hub");
 			       driver = new RemoteWebDriver(url, dc);
 			       wait = new WebDriverWait(driver, 30);
 		
 			}
 		
-			@Test(priority=1)
+			@Test(priority=1, enabled=true)
 			public void login() throws InterruptedException
 			{
 			driver.get("https://apollo2.humanbrain.in/viewer/annotation/portal");
@@ -125,7 +126,7 @@ public class Section {
 			  String parentWindow2 = driver.getWindowHandle();
 		
 			 
-			  WebElement redirectIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-card-footer[@class='p-2'])[1]/nb-icon")));
+			  WebElement redirectIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@nbtooltip='Viewer']")));
 			  if (redirectIcon != null && redirectIcon.isDisplayed()) {
 			  redirectIcon.click();
 			     System.out.println("Brain was clicked successfully");
@@ -226,14 +227,14 @@ public class Section {
 			  }
 			  Thread.sleep(3000);
 			 
-			  WebElement enterButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@class='custom-icon search-submit']")));
+			  WebElement enterButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//nb-icon[@class='custom-icon search-submit ng-star-inserted']")));
 			  if (enterButton != null && enterButton.isDisplayed()) {
 			  enterButton.click();
 			  System.out.println("Section Tags entered successfully");
 			  } else {
 			  System.out.println("Section Tags was not clickable");
 			  }
-			  Thread.sleep(3000);
+			  //Thread.sleep(3000);
 			 
 			  System.out.println("\n\n ************************Tags search done***********************");      
 		
@@ -242,8 +243,9 @@ public class Section {
 			@Test(priority=4)
 			public void atlasviewer() throws InterruptedException {
 			  String parentWindow3 = driver.getWindowHandle();
+			  WebDriverWait wait = new WebDriverWait(driver, 20);
 		
-			WebElement redirectIcon2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-card-footer[@class='p-2'])[2]/nb-icon[1]")));
+			WebElement redirectIcon2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//nb-icon[@nbtooltip='Atlas Editor'])[1]")));
 			  if (redirectIcon2 != null && redirectIcon2.isDisplayed()) {
 			  redirectIcon2.click();
 			     System.out.println("Atlas icon was clicked successfully");
@@ -262,12 +264,13 @@ public class Section {
 			     Thread.sleep(3000);
 			  String[] expectedFileName = {"14 | NISSL | 340"};  
 			 
-			  java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
+			   java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
 			     String actualFileName = locationElements.get(0).getText();
 			     Thread.sleep(2000);
 			     
 			     Assert.assertEquals(actualFileName, expectedFileName[0], "FileName not matching.");
 			     System.out.println("Brain loaded successfully.");
+			     
 			  System.out.println("\n\n ************************Atlas viewer validation done***********************");      
 		
 			     
@@ -285,7 +288,7 @@ public class Section {
 			WebElement redirectIcon2 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//nb-icon[@icon='viewCell'])[1]")));
 			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });", redirectIcon2);
 			Thread.sleep(3000);
-		
+
 			  if (redirectIcon2 != null && redirectIcon2.isDisplayed()) {
 			  redirectIcon2.click();
 			     System.out.println("Cell Annotation icon was clicked successfully");
@@ -305,13 +308,13 @@ public class Section {
 			  String[] expectedFileName = {"14 | NISSL | 340 | 0"};  
 			     java.util.List<WebElement> locationElements = driver.findElements(By.xpath("(//div[@class='paragraph'])[1]"));
 			     String actualFileName = locationElements.get(0).getText();
-		
+
 			     Thread.sleep(2000);
 			     
 			     Assert.assertEquals(actualFileName, expectedFileName[0], "FileName not matching.");
 			     System.out.println("Brain loaded successfully.");
 			  System.out.println("\n\n ************************Cell Annotation viewer validation done***********************");      
-		
+
 			}
 		
 		
