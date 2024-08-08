@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-05T17:34:20 IST" name="Default suite" finished-at="2024-08-05T17:35:03 IST" duration-ms="43272">
+  <suite started-at="2024-08-08T10:16:23 IST" name="Default suite" finished-at="2024-08-08T10:18:10 IST" duration-ms="107403">
     <groups>
     </groups>
-    <test started-at="2024-08-05T17:34:20 IST" name="Default test" finished-at="2024-08-05T17:35:03 IST" duration-ms="43272">
-      <class name="com.test.Tagit.NumberSearchOntology">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:20 IST" name="setup" finished-at="2024-08-05T17:34:21 IST" duration-ms="1055" status="PASS">
+    <test started-at="2024-08-08T10:16:23 IST" name="Default test" finished-at="2024-08-08T10:18:10 IST" duration-ms="107403">
+      <class name="com.test.Tagit.Region_Validate">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:16:23 IST" name="setup" finished-at="2024-08-08T10:17:19 IST" duration-ms="56444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:21 IST" name="Login" finished-at="2024-08-05T17:34:48 IST" duration-ms="27407" status="PASS">
+        <test-method signature="Login()[pri:1, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:17:19 IST" name="Login" finished-at="2024-08-08T10:17:47 IST" duration-ms="27782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:48 IST" name="table" finished-at="2024-08-05T17:34:56 IST" duration-ms="7666" status="PASS">
+        <test-method signature="table()[pri:2, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:17:47 IST" name="table" finished-at="2024-08-08T10:18:00 IST" duration-ms="13143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- table -->
-        <test-method signature="Direct_Draw_page()[pri:3, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:34:56 IST" name="Direct_Draw_page" finished-at="2024-08-05T17:35:00 IST" duration-ms="3665" status="PASS">
+        <test-method signature="regions()[pri:3, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:18:00 IST" name="regions" finished-at="2024-08-08T10:18:10 IST" duration-ms="9856" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Direct_Draw_page -->
-        <test-method signature="search()[pri:4, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:35:00 IST" name="search" finished-at="2024-08-05T17:35:03 IST" duration-ms="3253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.NumberSearchOntology@4803b726]" started-at="2024-08-05T17:35:03 IST" name="tearDown" finished-at="2024-08-05T17:35:03 IST" duration-ms="194" status="PASS">
+        </test-method> <!-- regions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:18:10 IST" name="tearDown" finished-at="2024-08-08T10:18:10 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.Tagit.NumberSearchOntology -->
+      </class> <!-- com.test.Tagit.Region_Validate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

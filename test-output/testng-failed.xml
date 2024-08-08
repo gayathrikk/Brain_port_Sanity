@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Tagit.NumberSearchOntology">
+      <class name="com.test.Tagit.Region_Validate">
         <methods>
-          <include name="tearDown"/>
+          <include name="regions"/>
           <include name="setup"/>
-          <include name="search"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.test.Tagit.NumberSearchOntology -->
+      </class> <!-- com.test.Tagit.Region_Validate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

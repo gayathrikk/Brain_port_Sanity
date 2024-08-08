@@ -76,7 +76,7 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
-            <test>com.test.Tagit.NumberSearchOntology</test>
+            <test>com.test.Tagit.Region_Validate</test>
           </configuration>
         </plugin>
       </plugins>
