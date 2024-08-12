@@ -6,6 +6,7 @@
       <class name="com.test.Tagit.Region_Validate">
         <methods>
           <include name="regions"/>
+          <include name="Login"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>

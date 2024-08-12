@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-08T10:16:23 IST" name="Default suite" finished-at="2024-08-08T10:18:10 IST" duration-ms="107403">
+  <suite started-at="2024-08-12T11:20:06 IST" name="Default suite" finished-at="2024-08-12T11:23:09 IST" duration-ms="182785">
     <groups>
     </groups>
-    <test started-at="2024-08-08T10:16:23 IST" name="Default test" finished-at="2024-08-08T10:18:10 IST" duration-ms="107403">
+    <test started-at="2024-08-12T11:20:06 IST" name="Default test" finished-at="2024-08-12T11:23:09 IST" duration-ms="182785">
       <class name="com.test.Tagit.Region_Validate">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:16:23 IST" name="setup" finished-at="2024-08-08T10:17:19 IST" duration-ms="56444" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:20:06 IST" name="setup" finished-at="2024-08-12T11:20:07 IST" duration-ms="1414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:17:19 IST" name="Login" finished-at="2024-08-08T10:17:47 IST" duration-ms="27782" status="PASS">
+        <test-method signature="Login()[pri:1, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:20:07 IST" name="Login" finished-at="2024-08-12T11:22:44 IST" duration-ms="156972" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:17:47 IST" name="table" finished-at="2024-08-08T10:18:00 IST" duration-ms="13143" status="PASS">
+        <test-method signature="table()[pri:2, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:22:44 IST" name="table" finished-at="2024-08-12T11:22:57 IST" duration-ms="12726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- table -->
-        <test-method signature="regions()[pri:3, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:18:00 IST" name="regions" finished-at="2024-08-08T10:18:10 IST" duration-ms="9856" status="PASS">
+        <test-method signature="regions()[pri:3, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:22:57 IST" name="regions" finished-at="2024-08-12T11:23:08 IST" duration-ms="11457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-08T10:18:10 IST" name="tearDown" finished-at="2024-08-08T10:18:10 IST" duration-ms="134" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:23:08 IST" name="tearDown" finished-at="2024-08-12T11:23:09 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
