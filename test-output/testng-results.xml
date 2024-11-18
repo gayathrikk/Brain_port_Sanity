@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-12T11:20:06 IST" name="Default suite" finished-at="2024-08-12T11:23:09 IST" duration-ms="182785">
+  <suite started-at="2024-11-18T10:02:28 IST" name="Default suite" finished-at="2024-11-18T10:06:39 IST" duration-ms="250197">
     <groups>
     </groups>
-    <test started-at="2024-08-12T11:20:06 IST" name="Default test" finished-at="2024-08-12T11:23:09 IST" duration-ms="182785">
-      <class name="com.test.Tagit.Region_Validate">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:20:06 IST" name="setup" finished-at="2024-08-12T11:20:07 IST" duration-ms="1414" status="PASS">
+    <test started-at="2024-11-18T10:02:28 IST" name="Default test" finished-at="2024-11-18T10:06:39 IST" duration-ms="250197">
+      <class name="com.test.Tagit.MRIPageclicks">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.test.Tagit.MRIPageclicks@23c30a20]" started-at="2024-11-18T10:02:28 IST" name="setup" finished-at="2024-11-18T10:05:39 IST" duration-ms="190532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login()[pri:1, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:20:07 IST" name="Login" finished-at="2024-08-12T11:22:44 IST" duration-ms="156972" status="PASS">
+        <test-method signature="testSanity()[pri:1, instance:com.test.Tagit.MRIPageclicks@23c30a20]" started-at="2024-11-18T10:05:39 IST" name="testSanity" finished-at="2024-11-18T10:05:40 IST" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method signature="table()[pri:2, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:22:44 IST" name="table" finished-at="2024-08-12T11:22:57 IST" duration-ms="12726" status="PASS">
+        </test-method> <!-- testSanity -->
+        <test-method signature="Videovalidate()[pri:2, instance:com.test.Tagit.MRIPageclicks@23c30a20]" started-at="2024-11-18T10:05:40 IST" name="Videovalidate" finished-at="2024-11-18T10:06:38 IST" duration-ms="58762" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- table -->
-        <test-method signature="regions()[pri:3, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:22:57 IST" name="regions" finished-at="2024-08-12T11:23:08 IST" duration-ms="11457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- regions -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.Region_Validate@f0da945]" started-at="2024-08-12T11:23:08 IST" name="tearDown" finished-at="2024-08-12T11:23:09 IST" duration-ms="192" status="PASS">
+        </test-method> <!-- Videovalidate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.test.Tagit.MRIPageclicks@23c30a20]" started-at="2024-11-18T10:06:38 IST" name="tearDown" finished-at="2024-11-18T10:06:39 IST" duration-ms="243" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.test.Tagit.Region_Validate -->
+      </class> <!-- com.test.Tagit.MRIPageclicks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
